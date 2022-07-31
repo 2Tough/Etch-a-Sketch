@@ -5,16 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="index.css" rel="stylesheet">
-    <script src="index.js defer"></script>
+   
     <title>Etch-a-Sketch</title>
 </head>
 <body>
+  <div class='parameters'>Change options
+  <div class='colors'>Colors</div>
+    <div class='sizes'>Sizing
+  <button  class='default'>16x16</button>
+  <div class='custom'>Set custom
+      <input type='number'>
+    <button id='submit' type='submit'>Submit</button>
+      </div>
+    </div>
+  <button id='reset'>reset</button>
+  </div>
 
     <div class="container">
-    <div class="top"></div>
+    <div class="top">Etch-a-Sketch</div>
     <div class="center">
         <div class="center-left"></div>
-        <div class="center-middle"></div>
+        <div class="center-middle" id="whiteboard"></div>
         <div class="center-right"></div>
     </div>
     <div class="down">
@@ -25,4 +36,5 @@
     </div>
 </div>
 </body>
+<script src="index.js"></script>
 </html>
